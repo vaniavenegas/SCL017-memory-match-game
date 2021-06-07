@@ -14,7 +14,7 @@
 //   .catch(console.error);
 //
 
-const App = () => {
+/*const App = () => {
   const el = document.createElement('div');
 
   el.className = 'App';
@@ -24,3 +24,5 @@ const App = () => {
 };
 
 export default App;
+
+*/

@@ -1,12 +1,32 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <meta charset="utf-8">
+    <meta charset="utf-8" />
     <title>Memory Match</title>
     <link rel="stylesheet" href="style.css" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
   </head>
   <body>
-    <div id="root"></div>
+  <div id="root"></div>
+     <main id="first-page" class="container">
+       <h1 id="whoIAm">¿Quién soy?</h1>
+        <section id="little-face">
+           <article class="box1">
+               <a href="#second-page" ><img id="little" onclick="showHideElement()" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQoE5HJg81zNpK71FOdkkjvU6VuI0CR6TETb29ZnOi_0wgz70AA2l8KHH1nGUiqbP7Kcww&usqp=CAU"></a>
+           </article>
+           <article class="box2">
+               <a href="#second-page"><img id="little" onclick="showHideElement()"  src="https://image.freepik.com/vector-gratis/dibujos-animados-cara-nino-lindo_18591-41511.jpg"></a>    
+           </article>
+        </section>
+        <footer>MemoryPlay</footer>
+      </main>
+    <main id="second-page" class="container2">
+      <h1>NIVEL 1</h1>
+      <br><br>
+      <p style="text-align: center;">aquí irán las cartas</p>
+  <br> <br> <br> <br>
+  <footer>MemoryPlay</footer>
+    </main>
     <script src="main.js" type="module"></script>
   </body>
 </html>
