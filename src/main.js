@@ -5,7 +5,6 @@
 
 document.getElementById("firstPage").addEventListener("click", firstPage, false);
 
-
 function firstPage() {
  document.getElementById("firstPage").style.display="none";
  document.getElementById("secondPage").style.display="block";
