@@ -1,22 +1,23 @@
 @import url('https://fonts.googleapis.com/css2?family=Sigmar+One&display=swap');
+*{
+  
+}
 body{
+  min-height: 100vh;
   margin: 0;
-  height: 100vh;
+  padding: 0;
+
 }
 .container {
   background-image:url(https://img.freepik.com/foto-gratis/cerca-fondo-arpillera-yute-bolsa-textura_53876-74666.jpg?size=626&ext=jpg);
   position: relative;
   font-family: 'Sigmar One', cursive;
   height: inherit;
-  visibility: visible;
-  display: block;
 }
 .container2 {
   background-color:#dcdcdc;
   position: relative;
   font-family: 'Sigmar One', cursive;
-  visibility: hidden;
-  display: none;
 } 
 h1 {
   position: relative;
