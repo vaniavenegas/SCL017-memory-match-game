@@ -32,6 +32,10 @@ section, footer{
   border: 8px solid rgb(214, 205, 205);
   border-radius: 20px;
 }
+button { 
+  border-radius: 20px;
+}
+
 @media (max-width: 768px) {
   /*hacerlo responsive*/
 
@@ -39,5 +43,4 @@ section, footer{
     height: 10rem;
     width: auto;
   }
-  
 }
