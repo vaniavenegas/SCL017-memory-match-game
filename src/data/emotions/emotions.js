@@ -1,7 +1,7 @@
 export default {
-  name: 'emotions',
+  name: 'Emotions',
   items:[
-    { id: 'miedo', image: "https://arasaac.org/pictograms/es/10261/miedo", bgColor: '#339933' },
+    { id: 'miedo', image: "://arasaac.org/pictogrms/es/10261/miedo", bgColor: '#339933' },
     { id: 'enfadado', image: "https://arasaac.org/pictograms/es/21820/enfadado" , bgColor: '#339933' },
     { id: 'contenta', image: "https://arasaac.org/pictograms/es/28647/contenta" , bgColor: '#339933' },
     { id: 'preocupado', image: "https://arasaac.org/pictograms/es/26985/preocupado", bgColor: '#F05032' },

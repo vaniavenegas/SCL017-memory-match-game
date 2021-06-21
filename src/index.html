@@ -1,33 +1,41 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8" />
-    <title>Memory Match</title>
-    <link rel="stylesheet" href="style.css" />
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-    <script src="main.js" type="module"></script>
-  </head>
-  <body>
-    <div id="firstPage"  class="container" style="display:block;"> 
-  
-       <h1 id="whoIAm">¿Quién soy?</h1>
-        <section id="little-face">
-           <article id="box1">
-              <button id="go"> <a href="#second-page" id="first-page"><img id="little" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQoE5HJg81zNpK71FOdkkjvU6VuI0CR6TETb29ZnOi_0wgz70AA2l8KHH1nGUiqbP7Kcww&usqp=CAU"></a></button>
-           </article>
-           <article class="box2">
-              <button id="go2"> <a href="#second-page" id="first-page"><img id="little" src="https://image.freepik.com/vector-gratis/dibujos-animados-cara-nino-lindo_18591-41511.jpg"></a></button>    
-           </article>
-        </section>
-        <footer>MemoryPlay</footer>
-     
-    </div>
-    <section id="secondPage"  class="container2" style="display:none;">
-      <h1>NIVEL 1</h1>
-      <br> <div id="root"></div>
 
-  <footer>MemoryPlay</footer>
-    
-    </section>
-  </body>
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Memory Match</title>
+  <linkrel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <div id="container">
+    <div id="firstPage" class="firstPage">
+      <h1>Quién soy</h1>
+      <div class="initialContainer"> 
+        <main class="box button">
+
+          <button id="buttonPlay" class="button-play"><img class="faces"
+              src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQoE5HJg81zNpK71FOdkkjvU6VuI0CR6TETb29ZnOi_0wgz70AA2l8KHH1nGUiqbP7Kcww&usqp=CAU"></a></button>
+          </button>
+          <button id="buttonPlay2" class="button-play"><img class="faces"
+              src="https://image.freepik.com/vector-gratis/dibujos-animados-cara-nino-lindo_18591-41511.jpg"></a></button>
+          </button>
+        </main>
+
+        <!--<div id="secondPage" class="secondPage"></div> -->
+
+        <!-- Footer -->
+        <footer class="footer" i="footer">
+          <i class="fa fa-star" aria-hidden="true"> </i> © 2021 - Memory Match <i class="far fa-star"
+            aria-hidden="true"></i>
+        </footer>
+      </div>
+
+      <script src="main.js" type="module"></script>
+    </div>
+  </div>
+</body>
+
 </html>
