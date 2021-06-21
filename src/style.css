@@ -80,6 +80,12 @@ h1 {
 button { 
   border-radius: 20px;
 }
+<<<<<<< HEAD
+=======
+button { 
+  border-radius: 20px;
+}
+>>>>>>> 010febad3ce6f4e3fcce9e9daf09f902eb802949
 
 @media (max-width: 768px) {
   /*hacerlo responsive*/
@@ -115,6 +121,7 @@ button {
   
     
   }
+<<<<<<< HEAD
 <<<<<<< HEAD
   
   .game-Board{   
@@ -220,6 +227,9 @@ button {
   
 
 
+=======
+}
+>>>>>>> 010febad3ce6f4e3fcce9e9daf09f902eb802949
 =======
 }
 >>>>>>> 010febad3ce6f4e3fcce9e9daf09f902eb802949

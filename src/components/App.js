@@ -251,5 +251,9 @@ export default App;
   return el;
 };
 export default App;
+<<<<<<< HEAD
+*/
+>>>>>>> 010febad3ce6f4e3fcce9e9daf09f902eb802949
+=======
 */
 >>>>>>> 010febad3ce6f4e3fcce9e9daf09f902eb802949
