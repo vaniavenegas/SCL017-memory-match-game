@@ -75,6 +75,15 @@ h1 {
   flex-direction:row;
   justify-content: space-around;
 }
+<<<<<<< HEAD
+=======
+button { 
+  border-radius: 20px;
+}
+
+@media (max-width: 768px) {
+  /*hacerlo responsive*/
+>>>>>>> 010febad3ce6f4e3fcce9e9daf09f902eb802949
 
 .button {
   display: flex;
@@ -106,6 +115,7 @@ h1 {
   
     
   }
+<<<<<<< HEAD
   
   .game-Board{   
     
@@ -210,3 +220,6 @@ h1 {
   
 
 
+=======
+}
+>>>>>>> 010febad3ce6f4e3fcce9e9daf09f902eb802949

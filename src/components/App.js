@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 import emotions from '../data/emotions/emotions.js';
 
 //------------------Creando data de imágenes----------------------
@@ -226,3 +227,29 @@ blockTwo.appendChild(exitGame);
 
 
 export default App;
+=======
+//
+// Para incluir los diferentes sets de cartas podemos _importar_ el archivo
+// JavasSript que contenga el `export` correspondiente...
+//
+// import emotions from '../data/emotions/emotions.js';
+// console.log(emotions);
+//
+// O alternativamente podríamos cargar el JSON de forma asíncrona usando
+// `fetch` en el momento que consideremos necesario.
+//
+// fetch('./data/pokemon/pokemon.json')
+//   .then(resp => resp.json())
+//   .then(console.log)
+//   .catch(console.error);
+//
+
+/*const App = () => {
+  const el = document.createElement('div');
+  el.className = 'App';
+  el.textContent = 'Hola mundo!';
+  return el;
+};
+export default App;
+*/
+>>>>>>> 010febad3ce6f4e3fcce9e9daf09f902eb802949
