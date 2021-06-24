@@ -27,20 +27,22 @@ import emotions from '../data/emotions/emotions.js';
       }
       
     
-      listEmotions = shuffle(listEmotions);
+     listEmotions = shuffle(listEmotions);
       
      
    
-// INFO JUEGO
-let blockTwo = document.createElement("div");
-blockTwo.className = "blockTwo";
+// CREAR LA PÁGINA DEL JUEGO
+let secondPage = document.createElement("div");
+secondPage.className = "secondPage";
+
+// CREAR INFO
 let information = document.createElement("div");
 information.className = "information";
-let infTime = document.createElement("div");
-infTime.className = "inf";
-let infoTime = document.createElement("p");
-infoTime.id="infoTime";
-infTime.appendChild(infoTime);
+//let infTime = document.createElement("div");
+//infTime.className = "inf";
+//let infoTime = document.createElement("p");
+//infoTime.id="infoTime";
+//infTime.appendChild(infoTime);
 //___________________________________
 let dadinfCheck = document.createElement("div");
 dadinfCheck.className="dadinfCheck";
@@ -78,7 +80,7 @@ information.appendChild(dadinfMoving);
 //information.appendChild(infTime);
 
 //information.appendChild(infMoving);
-blockTwo.appendChild(information);
+secondPage.appendChild(information);
 
 
 // TABLERO DE JUEGO
@@ -87,21 +89,21 @@ blockTwo.appendChild(information);
 
     
   
-    let cartasVoltedas =0;
+    let cardsFlipped =0;
     let cartaOne ="";
     let cartaTwo ="";
-    let cartasEncontradas=0;
-    let tiempo =0;
-    let intentos=0;
-   let temporizador;
+    let cardsFound=0;
+    //let tiempo =0;
+    let movements=0;
+   //let temporizador;
    //let iniciar=0;
   
 
-    let cartaElegida =[];
+    let chosenCard =[];
     for (let i=0; i<listEmotions.length; i++){
        let card = document.createElement("div");
        card.id = listEmotions[i].id;
-       cartaElegida.push(card.id );
+       chosenCard.push(card.id );
        
        card.className ="card";
        let imgFront = document.createElement("img");
@@ -132,13 +134,13 @@ blockTwo.appendChild(information);
         
       
      
-         if(cartasVoltedas<2){
-            if(cartasVoltedas==0){
+         if(cardsFlipped<2){
+            if(cardsFlipped==0){
               cartaOne = imagenId;
               //IMAGEN.push(imgBack);
              }
 
-           if(cartasVoltedas==1){
+           if(cardsFlipped==1){
             cartaTwo = imagenId;
             //IMAGEN.push(imgBack);
            
@@ -146,42 +148,45 @@ blockTwo.appendChild(information);
            } 
          
            card.style.transform="rotateY(180deg)";
-           cartasVoltedas = cartasVoltedas+1;
-           if (cartasVoltedas==2){
+           cardsFlipped = cardsFlipped+1;
+           if (cardsFlipped==2){
 
-              intentos++;
-              document.getElementById("infoMoving").innerHTML =intentos;
+            movements++;
+              document.getElementById("infoMoving").innerHTML =movements;
               setTimeout(()=>{
               
                 
               
                 if(cartaOne==cartaTwo){
-                  cartasEncontradas=cartasEncontradas+1;
-                  document.getElementById("infoCheck").innerHTML =cartasEncontradas;
+                  cardsFound=cardsFound+1;
+                  document.getElementById("infoCheck").innerHTML =cardsFound;
                 
                  
-                   let imagencarta =[];
-                   let reemplazoOne =document.createElement("div");
-                    reemplazoOne.className ="card-equal";
-                    let reemplazoTwo =document.createElement("div");
-                    reemplazoTwo.className ="card-equal";
-                    let reemplazo =[reemplazoOne,reemplazoTwo];
+                   let cardImage =[];
+                   let substitutionOne =document.createElement("div");
+                   substitutionOne.className ="card-equal";
+                    let substitutionTwo =document.createElement("div");
+                    substitutionTwo.className ="card-equal";
+                    let substitution =[substitutionOne,substitutionTwo];
                     let k=0;
 
               
+
+
+                    
                       for (let j = 0; j < chequeo.length; j++){
-                         imagencarta[j] = chequeo[j].getAttribute("id");
-                         if(imagencarta[j]==cartaOne){
+                        cardImage[j] = chequeo[j].getAttribute("id");
+                         if(cardImage[j]==cartaOne){
                             //chequeo[j].setAttribute("style","display:none");
-                            gameBoard.replaceChild(reemplazo[k],chequeo[j]);
+                            gameBoard.replaceChild(substitution[k],chequeo[j]);
                             k=k+1;
                         
                            
                           } 
                       }
                     
-                  if(cartasEncontradas==9){
-                        clearInterval(temporizador);
+                  if(cardsFound==9){
+                       // clearInterval(temporizador);
                           alert("Ganaste!!");
                   }
                 }
@@ -189,7 +194,7 @@ blockTwo.appendChild(information);
                    cardd.style.transform="";
                    
                    
-                 cartasVoltedas=0;
+                   cardsFlipped=0;
                  } 
            },1500); 
         
@@ -222,7 +227,7 @@ blockTwo.appendChild(information);
       
     }
     
-    blockTwo.appendChild(gameBoard);
+    secondPage.appendChild(gameBoard);
     let exitGame = document.createElement("div");
 exitGame.className ="information";
 let help = document.createElement("div");
@@ -231,11 +236,11 @@ let home = document.createElement("div");
 home.className="inf";
 exitGame.appendChild(help);
 exitGame.appendChild(home);
-blockTwo.appendChild(exitGame);
+secondPage.appendChild(exitGame);
 
 
 
-    return blockTwo;
+    return secondPage;
     
   }
 
