@@ -3,13 +3,11 @@
 * {
   box-sizing: border-box;
 }
-
 body {
   background: url(https://bit.ly/3cYfm4t);
   background-repeat:repeat;
   background-size: cover;
 }
-
 .initialContainer {
   width: 100%;
   display: flex;
@@ -18,26 +16,23 @@ body {
   font-family: 'Sigmar One', cursive;
   height: inherit;
 }
-
+h1 {
+  
+  position: center;
+  justify-content: center;
+  font-size: 570%;
+  margin-top:0%;
+  font-family: 'Sigmar One', cursive;
+}
 header {
   display: flex;
   justify-content: center;
   padding-top: 40px;
-
 } 
-
 .boxHeader {
   border: #ff009d 1px solid;
   padding:10px;
-
 } 
-
-
-/* .logoPrincipal {
-
-} */
-
-
 .initiaContainer{
   width: 90%;
   display: flex;
@@ -45,46 +40,28 @@ header {
   justify-content: center;
   margin: 0 auto;
 }
-
-
-
-
 .faces{
   height: 300px;
   width: auto;
   border: 8px solid rgb(214, 205, 205);
   border-radius: 100px;
 }
-
-h1 {
-  position: relative;
-  position: center;
-  justify-content: center;
-  font-size: 570%;
-  margin-top:0%;
-  font-family: 'Sigmar One', cursive;
-}
-
 .footer{
   font-size:150%;
   margin-left: 40%;
   align-items: flex-end;
   margin-top: 20vh;
-
 }
-
 /* Contenedor de los botones */
 .buttonContainer{
   flex-direction:row;
   justify-content: space-around;
 }
-
 .button {
   display: flex;
   justify-content: center;
   width: 100%;
 }
-
 .button-play,
 .help {
   height: 320px;
@@ -93,23 +70,16 @@ h1 {
   /* box-shadow: -3px -3px 7px #fff;
   3px 3px 5px rgb(94, 104, 121, 0.7); */
 }
-
-
-  .blockTwo{
-    width: 100%;
-      display: flex;
-      flex-direction: column;
-      align-content: center;
-      justify-content: center;
-      padding-left: 15%;
-      padding-right: 15%;
-    
-  
-    
+.blockTwo{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  justify-content: center;
+  padding-left: 15%;
+  padding-right: 15%;   
   }
-  
-  .game-Board{   
-    
+  .game-Board{     
     width: 100%;
     max-width: 1500px;
     height: auto;
@@ -120,11 +90,9 @@ h1 {
     justify-content: center;
     margin-top: 15px;
     /*background: #F4F6F7;*/
-  
-    
    }
   
-   /*.container{  Pertenece a códico ATOM
+   .container{  /*Pertenece a códico ATOM*/
     width:90%
     height:90%;
      background:url(./image/1813.jpg);
@@ -133,7 +101,7 @@ h1 {
      flex-wrap:wrap;
       justify-content:center;
       align-content:center;
-  }*/
+  }
   
   .card{
     background: #F4F6F7;
@@ -148,7 +116,7 @@ h1 {
     transition: transform 0.8s;
     transform-style:preserve-3d;
   }
-  
+
   .card-equal{
     margin: 8px;
     width: 120px;
@@ -169,15 +137,14 @@ h1 {
      
   }
   
-  
-  
+    
   .img-back{
     -webkit-backface-visibility: hidden;
     backface-visibility: hidden;
   transform: rotateY(180deg);
     display: block;
     background-size:100px;
-    margin-top: -105px;
+    margin-top: -15px;
     margin-right: 100px;
     margin-left: -20px;
    

@@ -1,6 +1,6 @@
 import emotions from '../data/emotions/emotions.js';
 
-//------------------Creando data de imágenes----------------------
+//                    IMAGENES NUESTRAS 
 
   const App = () => {
 
@@ -11,13 +11,13 @@ import emotions from '../data/emotions/emotions.js';
     }
     
     
-    //--------------------------------Función para barajear arreglos-----------------------
+    //                  BARAJAR CARTAS
     function shuffle(array){
       let lastIndex = array.length-1;
       let value = array.length;
          while(lastIndex > 0){
            let lastValue = array[lastIndex];
-           let  randonIndex = Math.floor(Math.random() * value);
+           let  randonIndex = Math.floor(Math.random() * 9);
            array[lastIndex] = array[randonIndex];
            array[randonIndex] = lastValue;
            lastIndex = lastIndex-1;
@@ -25,13 +25,13 @@ import emotions from '../data/emotions/emotions.js';
          }
            return array;
       }
-      //-----------------------------------------------------------------------------------------
+      
     
       listEmotions = shuffle(listEmotions);
-      console.log(listEmotions);
+      
      
-     
-//------Información de la jugada-----//
+   
+// INFO JUEGO
 let blockTwo = document.createElement("div");
 blockTwo.className = "blockTwo";
 let information = document.createElement("div");
@@ -57,7 +57,7 @@ dadinfCheck.appendChild(iconCheck);
 dadinfCheck.appendChild(infCheck);
 information.appendChild(dadinfCheck);
 
-//______________________________
+
 //_______________________________
 let dadinfMoving = document.createElement("div");
 dadinfMoving.className="dad";
@@ -75,20 +75,18 @@ dadinfMoving.appendChild(iconMoving);
 dadinfMoving.appendChild(infMoving);
 information.appendChild(dadinfMoving);
 //____________________________
-information.appendChild(infTime);
+//information.appendChild(infTime);
 
 //information.appendChild(infMoving);
 blockTwo.appendChild(information);
 
 
-//------tablero de juego------//
+// TABLERO DE JUEGO
     let gameBoard = document.createElement("div");
     gameBoard.className ="game-Board";
-    //-------------------Función temporizador----------------------
-    
-   
 
-    //---------------Nuevas variables------------------
+    
+  
     let cartasVoltedas =0;
     let cartaOne ="";
     let cartaTwo ="";
@@ -97,7 +95,8 @@ blockTwo.appendChild(information);
     let intentos=0;
    let temporizador;
    //let iniciar=0;
-    //-----------------------------------------------
+  
+
     let cartaElegida =[];
     for (let i=0; i<listEmotions.length; i++){
        let card = document.createElement("div");
@@ -115,26 +114,37 @@ blockTwo.appendChild(information);
        
        card.appendChild(imgFront);
        let chequeo=document.getElementsByClassName("card");
+       let imgBack = document.createElement("img");
+       card.appendChild(imgBack);
+
       imgFront.addEventListener("click", (e)=>{
-         timer();
-        // let IMAGEN =[];
+    //     timer();
+      card.removeChild(imgBack)
+    
         let carN = e.target;
         let imagenId =carN.getAttribute("id");
         let image = listEmotions[i].image;
-        let imgBack = document.createElement("img");
+        
         imgBack.id = imagenId;
          imgBack.setAttribute("class","img-back");
          imgBack.setAttribute("src",image);
-         card.appendChild(imgBack)
+        card.appendChild(imgBack);
+        
+      
+     
          if(cartasVoltedas<2){
             if(cartasVoltedas==0){
               cartaOne = imagenId;
               //IMAGEN.push(imgBack);
              }
+
            if(cartasVoltedas==1){
             cartaTwo = imagenId;
             //IMAGEN.push(imgBack);
-           }
+           
+
+           } 
+         
            card.style.transform="rotateY(180deg)";
            cartasVoltedas = cartasVoltedas+1;
            if (cartasVoltedas==2){
@@ -148,6 +158,7 @@ blockTwo.appendChild(information);
                 if(cartaOne==cartaTwo){
                   cartasEncontradas=cartasEncontradas+1;
                   document.getElementById("infoCheck").innerHTML =cartasEncontradas;
+                
                  
                    let imagencarta =[];
                    let reemplazoOne =document.createElement("div");
@@ -156,17 +167,19 @@ blockTwo.appendChild(information);
                     reemplazoTwo.className ="card-equal";
                     let reemplazo =[reemplazoOne,reemplazoTwo];
                     let k=0;
+
+              
                       for (let j = 0; j < chequeo.length; j++){
                          imagencarta[j] = chequeo[j].getAttribute("id");
                          if(imagencarta[j]==cartaOne){
                             //chequeo[j].setAttribute("style","display:none");
                             gameBoard.replaceChild(reemplazo[k],chequeo[j]);
                             k=k+1;
-                          
-                            
-                          }
+                        
+                           
+                          } 
                       }
-                      
+                    
                   if(cartasEncontradas==9){
                         clearInterval(temporizador);
                           alert("Ganaste!!");
@@ -175,42 +188,40 @@ blockTwo.appendChild(information);
                  for(let cardd of chequeo){
                    cardd.style.transform="";
                    
-                  
                    
                  cartasVoltedas=0;
-                 }
-           },1500);
-          
+                 } 
+           },1500); 
+        
          }
        
-         
-     
 
-     
       
        
-        // card.removeChild(imgBack); 
-
     }
     
     
-//-------------------Salida de juego----------------------------//
+//-------------
 
 
 
 
-function timer(){
+/*function timer(){
   temporizador = setInterval(() => {
     tiempo++;
     document.getElementById("infoTime").innerHTML = tiempo;
   },1000);
-}
+}*/
 
 
   
       });
+      
       gameBoard.appendChild(card);
+     
+      
     }
+    
     blockTwo.appendChild(gameBoard);
     let exitGame = document.createElement("div");
 exitGame.className ="information";
@@ -221,7 +232,11 @@ home.className="inf";
 exitGame.appendChild(help);
 exitGame.appendChild(home);
 blockTwo.appendChild(exitGame);
+
+
+
     return blockTwo;
+    
   }
 
 

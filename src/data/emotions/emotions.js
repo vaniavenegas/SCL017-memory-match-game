@@ -1,14 +1,15 @@
 export default {
   name: 'Emotions',
   items:[
-    { id: 'miedo', image: "://arasaac.org/pictogrms/es/10261/miedo", bgColor: '#339933' },
-    { id: 'enfadado', image: "https://arasaac.org/pictograms/es/21820/enfadado" , bgColor: '#339933' },
-    { id: 'contenta', image: "https://arasaac.org/pictograms/es/28647/contenta" , bgColor: '#339933' },
-    { id: 'preocupado', image: "https://arasaac.org/pictograms/es/26985/preocupado", bgColor: '#F05032' },
-    { id: 'aburrida', image: "https://arasaac.org/pictograms/es/28705/aburrida", bgColor: '#F05032' },
-    { id: 'avergonzada', image: "https://arasaac.org/pictograms/es/11953/avergonzada", bgColor: '#F05032' },
-    { id: 'enamorado', image: "https://arasaac.org/pictograms/es/7232/rom%C3%A1ntico", bgColor: '#1572B6' },
-    { id: 'sorprendida', image: "https://arasaac.org/pictograms/es/31099/sorprendida", bgColor: '#1572B6' },
-    { id: 'agobiado', image:  "https://arasaac.org/pictograms/es/36341/agobiado", bgColor: '#1572B6' },
+    { id: 'asustado', image: "https://www.lifeder.com/wp-content/uploads/2018/02/ni%C3%B1o-miedo-ara%C3%B1a.jpg", bgColor: '#339933' },
+    { id: 'enfadado', image: "https://static.guiainfantil.com/media/19735/c/hugo-aprende-a-controlar-su-ira-cuento-corto-para-ninos-de-la-rabia-xs.jpg" , bgColor: '#339933' },
+    { id: 'contenta', image: "https://image.freepik.com/vector-gratis/vuelta-escuela-nino-salto-contento-ir-escuela-sol-manana_68708-363.jpg" , bgColor: '#339933' },
+    { id: 'preocupado', image: "https://previews.123rf.com/images/anggar3ind/anggar3ind1701/anggar3ind170100362/68542302-confundido-ni%C3%B1o-en-responder-a-crucigrama.jpg", bgColor: '#F05032' },
+    { id: 'aburrida', image: "https://static.guiainfantil.com/media/16317/c/me-aburro-cuentos-cortos-para-ninos-sobre-el-aburrimiento-en-casa-lg.jpg", bgColor: '#F05032' },
+    { id: 'avergonzada', image: "https://comps.canstockphoto.es/lindo-ilustraci%C3%B3n-vector-emotions-eps-vectorial_csp68672088.jpg", bgColor: '#F05032' },
+    { id: 'enamorado', image: "http://1.bp.blogspot.com/-ULzbXcm2qN4/TZNh-ad2biI/AAAAAAAAAFg/_WoGcFDuefQ/s1600/enamorada_6j3.jpg", bgColor: '#1572B6' },
+    { id: 'sorprendida', image: "https://i0.wp.com/thumbs.dreamstime.com/b/la-emoci%C3%B3n-de-sorpresa-joven-sorprendido-elemento-para-una-incre%C3%ADble-y-sorprendente-noticia-o-sugerencia-157925274.jpg", bgColor: '#1572B6' },
+    { id: 'agobiado', image:  "https://thumbs.dreamstime.com/b/el-activar-gordo-del-hombre-cansado-31019325.jpg", bgColor: '#1572B6' },
   ],
 };
+ 
