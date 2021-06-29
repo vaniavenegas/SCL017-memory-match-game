@@ -27,7 +27,7 @@ const App = () => {
   }
 
 
- listEmotions = shuffle(listEmotions);
+//listEmotions = shuffle(listEmotions);
 
 
   // CREAR LA PÁGINA DEL JUEGO
@@ -130,7 +130,27 @@ secondPage.appendChild(divHeader);
               }
 
               if (cardsFound == 9) {
-                alert("LO LOGRASTE!!! BIEN HECHO!!");
+
+// CREAMOS UNA VENTANA EN LA SEGUNDA PÁGINA 
+let divWinner = document.createElement('div');
+divWinner.className= 'containerWinnerMessage';
+let imgWinner = document.createElement("img");
+    imgWinner.src = "./images/felicidades.jpg";
+    imgWinner.className = "imgWinner";
+let replayButton = document.createElement("button");
+    replayButton.innerHTML = "JUGAR OTRA VEZ";
+    replayButton.className = "replay-button";
+   
+    replayButton.addEventListener("click", function() {
+      location.reload();
+    })
+    divWinner.appendChild(imgWinner);
+    divWinner.appendChild(replayButton);
+secondPage.appendChild(divWinner);
+
+
+
+     
               }
             }
             for (let cardd of check) {
