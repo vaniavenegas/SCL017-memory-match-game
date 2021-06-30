@@ -5,7 +5,8 @@
 * [Preámbulo](#preámbulo)
 * [Investigación temática](#Investigación-temática)
 * [Historias de usuarios](#Historias-de-usuarios)
-
+* [Prototipos y Diagrama de flujo](#Prototipos-de-baja-y-alta-fidelidad)
+* [Test de Usabilidad](#Test-de-usabilidad)
 ***
 Developers: Vania Villegas-Viviana Moya.
 ***
@@ -44,7 +45,7 @@ gracias a esta investigación nacieron nuestras Historias de Usuario.
 
 MemoPlay, aunque está diseñado idealmente puede ser usado como una herramienta de apoyo para que un Adulto (padre, docente u otro) pueda ayudar a un niño con TEA en el entendimiento y gestión de las emociones, puede ser usado por cualquier persona de cualquier edad. 
 
-### Historia de usuario 1, 2 y 3"juego simple e intuitivo que Fortalecer la autodefinición y reconocimiento de emociones"
+### Historia de usuario 1, 2 y 3 "juego simple e intuitivo que Fortalecer la autodefinición y reconocimiento de emociones"
 
 DESCRIPCIÓN: Los niños con trastorno del espectro autista comprenden más tardíamente y con mayor dificultades qué son y qué sienten; además les abruma las páginas sobrecargadas de contenido.
 
@@ -55,21 +56,18 @@ DEFINICIÓN DE REALIZADO:
 - Escoger paletas de colores sencillas que no sobrecargen la página de estímulos innecesarios. 
 - Un título simple que le anime a interactuar con lo que se presenta bajo él.
 - Botones grandes con caritas de niño y niña para que el niño escoja con cuál se representa y que lo lleve al juego sin necesidad de registrarse. 
-
-CÓMO SE VE:
-
-![HISTORIAS DE USUARIO 1,2 y 3](../master/src/images/HU1.png)
+- Se seleccionan tarjetas con niños de diferentes características mostrando de forma notoria diferentes emociones tales como: susto, enojo, felicidad, preocupación, aburrimiento, vergüenza,sorpresa, cansancio y enamorado. 
 
 ITERACIONES SUGERIDAS: 
 Al mostrar el resultado de esta historia de usuario se recibieron varios feedbacks:
 - Los niños escogidos para los botones son muy estereotipados (niños rubios o con ojos claros). 
 - Aunque potencia la autodefinición no hace mucho en aporte a la gestión emocional.
 - El título es un poco "discriminador" no refleja una potencial variedad.
-- corregir bordes para que no se vea agresivo.
+- Corregir bordes para que no se vea agresivo.
 
-SE CONSIDERARON TODAS LAS SUGERENCIAS Y LUEGO DE ESTAS ITERACIONES LA PRIMERA HISTORIA DE USUARIO QUEDÓ ASÍ: 
+SE CONSIDERARON TODAS LAS SUGERENCIAS, AQUÍ EL ANTES Y EL DESPUÉS: 
 
-![HISTORIAS DE USUARIO 1,2 y 3](../master/src/images/Hu1.2.png)
+![HISTORIAS DE USUARIO 1,2 y 3](../master/src/images/Hu1.png)
 
 ### Historia de usuario 4 y 5 "juego simple e intuitivo, sin distractores y que muestre el avance"
 
@@ -81,16 +79,38 @@ lograr que la página tenga el mínimo de información posible y aún así muest
 DEFINICIÓN DE REALIZADO:
 - Se eliminan las cartas que hacen match así el niño sabrá cuánto ha avanzado (sin necesidad de cuadros informativos). 
 - Se incluye un mensaje de felicidades al acabar la partida.
-- se incluye un boton de volver a jugar.  
-
-CÓMO SE VE:
-
-![HISTORIAS DE USUARIO 1](../master/src/images/avance.png)
+- Se incluye un boton de volver a jugar.  
 
 ITERACIONES SUGERIDAS: 
 Luego de varios feedback y de evaluar el proyecto decidimos el siguiente cambio: 
 - Se coloca un título que especifique el nivel e que se juega.
+- Se crea un dibujo para la parte de atrás de la carta más rústico para que se vea mejor en función del background.
 
-LUEGO DE ITERAR LA PRIMERA HISTORIA DE USUARIO QUEDÓ ASÍ: 
+NUESTRA HISTORIA 4 Y 5 ANTES Y DESPUÉS DE ITERAR:
+![HISTORIAS DE USUARIO 4 y 5](../master/src/images/avance.png)
 
-![HISTORIAS DE USUARIO 1](../master/src/images/nivel1.png)
+### Historia de usuario 6 "jugar en distintos dispositivos"
+
+DESCRIPCIÓN: Hoy los artículos electrónicos están muy generalizados, por ello necesitamos un juego que se adapte a diferentes pantallas.
+
+CRITERIOS MÍNIMOS DE ACEPTACIÓN: 
+Debe ser responsive.
+
+DEFINICIÓN DE REALIZADO:
+- Los botones de carita se agrupan cuando la pantalla es más pequeña (como la de un celular).
+- Se puede jugar en tablet y en varios equipos móviles.
+
+
+![HISTORIAS DE USUARIO 1,2 y 3](../master/src/images/responsive.png)
+
+## Prototipos de baja y alta fidelidad.
+
+A partir de las historias de usuario generamos algunos prototipos que fueron evolucionando a medida avanzaba el proyecto según los feedbacks recibidos: 
+
+![PROTOTIPOS](../master/src/images/Prototipos.jpg)
+
+![PROTOTIPOS](../master/src/images/diagrama.jpg)
+
+## Test de Usabilidad.
+
+Con el testeo de usabilidad notamos que el diseño a pesar de ser simple es instuitivo y fácil de seguir y que las imágenes escogidas son entretenidas y demostrativas. 
