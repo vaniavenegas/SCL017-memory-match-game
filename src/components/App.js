@@ -27,7 +27,7 @@ const App = () => {
   }
 
 
-//listEmotions = shuffle(listEmotions);
+listEmotions = shuffle(listEmotions);
 
 
   // CREAR LA PÁGINA DEL JUEGO
