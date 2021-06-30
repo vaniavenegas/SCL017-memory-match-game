@@ -59,7 +59,17 @@ DEFINICIÓN DE REALIZADO:
 - Botones grandes con caritas de niño y niña para que el niño escoja con cuál se representa y que lo lleve al juego sin necesidad de registrarse. 
 
 CÓMO SE VE:
-![HISTORIAS DE USUARIO 1](../master/src/images/HU1.jpg)
+
+![HISTORIAS DE USUARIO 1](../master/src/images/HU1.png)
 
 ITERACIONES SUGERIDAS: 
-- 
+Al mostrar el resultado de esta historia de usuario se recibieron varios feedbacks:
+- Los niños escogidos para los botones son muy estereotipados (niños rubios o con ojos claros). 
+- Aunque potencia la autodefinición no hace mucho en aporte a la gestión emocional.
+- El título es un poco "discriminador" no refleja una potencial variedad.
+
+LUEGO DE ITERAR LA PRIMERA HISTORIA DE USUARIO QUEDÓ ASÍ: 
+
+![HISTORIAS DE USUARIO 1](../master/src/images/HU1.2.png)
+
+### Historia de usuario 3 "juego simple e intuitivo que Fortalecer la autodefinición"
