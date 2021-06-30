@@ -2,11 +2,9 @@
 
 ## Índice
 
-* [Preámbulo](#1-preámbulo)
-* [Investigación temática](#1-Investigación-temática)
-* [Historias de usuarios](#2-Historias-de-usuarios)
-* [Investigación temática](#3-Investigación-temática)
-
+* [Preámbulo](#preámbulo)
+* [Investigación temática](#Investigación-temática)
+* [Historias de usuarios](#Historias-de-usuarios)
 
 ***
 Developers: Vania Villegas-Viviana Moya.
@@ -46,7 +44,7 @@ gracias a esta investigación nacieron nuestras Historias de Usuario.
 
 MemoPlay, aunque está diseñado idealmente puede ser usado como una herramienta de apoyo para que un Adulto (padre, docente u otro) pueda ayudar a un niño con TEA en el entendimiento y gestión de las emociones, puede ser usado por cualquier persona de cualquier edad. 
 
-### Historia de usuario 1 y 2 "juego simple e intuitivo que Fortalecer la autodefinición"
+### Historia de usuario 1, 2 y 3"juego simple e intuitivo que Fortalecer la autodefinición y reconocimiento de emociones"
 
 DESCRIPCIÓN: Los niños con trastorno del espectro autista comprenden más tardíamente y con mayor dificultades qué son y qué sienten; además les abruma las páginas sobrecargadas de contenido.
 
@@ -60,16 +58,39 @@ DEFINICIÓN DE REALIZADO:
 
 CÓMO SE VE:
 
-![HISTORIAS DE USUARIO 1](../master/src/images/HU1.png)
+![HISTORIAS DE USUARIO 1,2 y 3](../master/src/images/HU1.png)
 
 ITERACIONES SUGERIDAS: 
 Al mostrar el resultado de esta historia de usuario se recibieron varios feedbacks:
 - Los niños escogidos para los botones son muy estereotipados (niños rubios o con ojos claros). 
 - Aunque potencia la autodefinición no hace mucho en aporte a la gestión emocional.
 - El título es un poco "discriminador" no refleja una potencial variedad.
+- corregir bordes para que no se vea agresivo.
+
+SE CONSIDERARON TODAS LAS SUGERENCIAS Y LUEGO DE ESTAS ITERACIONES LA PRIMERA HISTORIA DE USUARIO QUEDÓ ASÍ: 
+
+![HISTORIAS DE USUARIO 1,2 y 3](../master/src/images/Hu1.2.png)
+
+### Historia de usuario 4 y 5 "juego simple e intuitivo, sin distractores y que muestre el avance"
+
+DESCRIPCIÓN: El trabajar la ansiedad y la tolerancia a la frustración es complejo en cualquier niño, pero es un desafío especialmente complejo en un niño con TEA, por ello el juego debe ser lo más sencillo posible sin elementos distractores que potencialmente terminen abrumando o irritando al niño, que muestre avance y el resultado al ganar.
+
+CRITERIOS MÍNIMOS DE ACEPTACIÓN: 
+lograr que la página tenga el mínimo de información posible y aún así muestre al niño su avance y, al ganar, que le haga saber que lo logró.
+
+DEFINICIÓN DE REALIZADO:
+- Se eliminan las cartas que hacen match así el niño sabrá cuánto ha avanzado (sin necesidad de cuadros informativos). 
+- Se incluye un mensaje de felicidades al acabar la partida.
+- se incluye un boton de volver a jugar.  
+
+CÓMO SE VE:
+
+![HISTORIAS DE USUARIO 1](../master/src/images/avance.png)
+
+ITERACIONES SUGERIDAS: 
+Luego de varios feedback y de evaluar el proyecto decidimos el siguiente cambio: 
+- Se coloca un título que especifique el nivel e que se juega.
 
 LUEGO DE ITERAR LA PRIMERA HISTORIA DE USUARIO QUEDÓ ASÍ: 
 
-![HISTORIAS DE USUARIO 1](../master/src/images/HU1.2.png)
-
-### Historia de usuario 3 "juego simple e intuitivo que Fortalecer la autodefinición"
+![HISTORIAS DE USUARIO 1](../master/src/images/nivel1.png)
