@@ -67,7 +67,7 @@ Al mostrar el resultado de esta historia de usuario se recibieron varios feedbac
 
 SE CONSIDERARON TODAS LAS SUGERENCIAS, AQUÍ EL ANTES Y EL DESPUÉS: 
 
-![HISTORIAS DE USUARIO 1,2 y 3](../master/src/images/hu1.png)
+![HISTORIAS DE USUARIO 1,2 y 3](../master/src/images/historia.png)
 
 ### Historia de usuario 4 y 5 "juego simple e intuitivo, sin distractores y que muestre el avance"
 
