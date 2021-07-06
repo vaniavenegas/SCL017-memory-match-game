@@ -8,8 +8,9 @@
 * [Prototipos y Diagrama de flujo](#Prototipos-de-baja-y-alta-fidelidad)
 * [Test de Usabilidad](#Test-de-usabilidad)
 ***
-Developers: Vania Villegas-Viviana Moya.
-Link del juego: MemoPlay
+Developers: Vania Villegas-Viviana Moya
+
+Link del juego: 
 ***
 
 ## Preámbulo
