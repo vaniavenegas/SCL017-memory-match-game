@@ -9,6 +9,7 @@
 * [Test de Usabilidad](#Test-de-usabilidad)
 ***
 Developers: Vania Villegas-Viviana Moya.
+Link del juego: MemoPlay
 ***
 
 ## Preámbulo
