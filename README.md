@@ -10,7 +10,7 @@
 ***
 Developers: Vania Villegas-Viviana Moya
 
-Link del juego: 
+Link del juego: [MemoPlay]( https://vivimoya.github.io/SCL017-memory-match-game/src)
 ***
 
 ## Preámbulo
